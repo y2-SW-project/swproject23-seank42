@@ -24,11 +24,11 @@ class HomeController extends Controller
      */
     public function index()
     {
-        $movies = Movie::all();
-        $movies = Movie::paginate(10);
-        // $movies = Movie::with('newreleases')->get();
+        $station = Station::all();
+        $station = Station::paginate(10);
+        // $station = Movie::with('newreleases')->get();
  
-         return view('home')->with('movies', $movies);
+         return view('home')->with('station', $station);
        // return view('home');
     }
 }

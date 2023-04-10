@@ -2,11 +2,11 @@
 
 namespace Database\Seeders;
 
-use App\Models\Shows;
+use App\Models\Recipt;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 
-class ShowsSeeder extends Seeder
+class ReciptSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -15,6 +15,6 @@ class ShowsSeeder extends Seeder
      */
     public function run()
     {
-        Shows::factory()->times(25)->create();
+        Recipt::factory()->times(25)->create();
     }
 }

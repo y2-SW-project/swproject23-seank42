@@ -2,11 +2,11 @@
 
 namespace Database\Seeders;
 
-use App\Models\Genre;
+use App\Models\Station;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 
-class GenreSeeder extends Seeder
+class StationSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -15,6 +15,6 @@ class GenreSeeder extends Seeder
      */
     public function run()
     {
-        Genre::factory()->times(10)->create();
+        Station::factory()->times(40)->create();
     }
 }

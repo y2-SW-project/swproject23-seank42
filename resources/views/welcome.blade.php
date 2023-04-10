@@ -3,7 +3,7 @@
 @section('content')
     <div class="container mx-5">
         <div class="row justify-content-center">
-            <div>
+            <!-- <div>
                 <h1>Hello World</h1>
                 <h3>This is a laravel-bootstrap template</h3>
                 <div class="mt-5">

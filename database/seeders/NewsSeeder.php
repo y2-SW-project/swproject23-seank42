@@ -2,11 +2,11 @@
 
 namespace Database\Seeders;
 
-use App\Models\Episode;
+use App\Models\News;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 
-class EpisodeSeeder extends Seeder
+class NewsSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -15,6 +15,6 @@ class EpisodeSeeder extends Seeder
      */
     public function run()
     {
-        Episode::factory()->times(25)->create();
+        News::factory()->times(40)->create();
     }
 }

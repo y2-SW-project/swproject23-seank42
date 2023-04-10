@@ -14,10 +14,12 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        $this->call(MovieSeeder::class);
-        $this->call(GenreSeeder::class);
+        $this->call(FuelSeeder::class);
+        $this->call(NewsSeeder::class);
 
-        $this->call(ShowsSeeder::class);
-        $this->call(EpisodeSeeder::class);
+        $this->call(CountySeeder::class);
+        $this->call(ReciptSeeder::class);
+        $this->call(StationSeeder::class);
+
     }
 }
