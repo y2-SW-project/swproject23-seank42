@@ -148,11 +148,7 @@ return array(
     'Cron\\MonthField' => $vendorDir . '/dragonmantank/cron-expression/src/Cron/MonthField.php',
     'Database\\Factories\\EpisodeFactory' => $baseDir . '/database/factories/EpisodeFactory.php',
     'Database\\Factories\\GenreFactory' => $baseDir . '/database/factories/GenreFactory.php',
-<<<<<<< HEAD
     'Database\\Factories\\NewsFactory' => $baseDir . '/database/factories/NewsFactory.php',
-=======
-    'Database\\Factories\\MovieFactory' => $baseDir . '/database/factories/MovieFactory.php',
->>>>>>> 4360216d50a0c47085f82634595c1b86fcb61d5f
     'Database\\Factories\\ShowsFactory' => $baseDir . '/database/factories/ShowsFactory.php',
     'Database\\Factories\\UserFactory' => $baseDir . '/database/factories/UserFactory.php',
     'Database\\Seeders\\DatabaseSeeder' => $baseDir . '/database/seeders/DatabaseSeeder.php',
