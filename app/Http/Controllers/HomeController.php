@@ -2,7 +2,6 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Movie;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
@@ -24,11 +23,6 @@ class HomeController extends Controller
      */
     public function index()
     {
-        $station = Station::all();
-        $station = Station::paginate(10);
-        // $station = Movie::with('newreleases')->get();
- 
-         return view('home')->with('station', $station);
-       // return view('home');
+        return view('home');
     }
 }

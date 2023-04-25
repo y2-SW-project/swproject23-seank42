@@ -1,7 +1,7 @@
 <?php
 
 namespace Database\Seeders;
-use Illuminate\Support\Facades\App\Models\Movie;
+
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 
@@ -9,17 +9,14 @@ class DatabaseSeeder extends Seeder
 {
     /**
      * Seed the application's database.
-     *
-     * @return void
      */
-    public function run()
+    public function run(): void
     {
-        $this->call(FuelSeeder::class);
-        $this->call(NewsSeeder::class);
+        // \App\Models\User::factory(10)->create();
 
-        $this->call(CountySeeder::class);
-        $this->call(ReciptSeeder::class);
-        $this->call(StationSeeder::class);
-
+        // \App\Models\User::factory()->create([
+        //     'name' => 'Test User',
+        //     'email' => 'test@example.com',
+        // ]);
     }
 }
