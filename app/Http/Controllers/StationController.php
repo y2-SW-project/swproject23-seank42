@@ -3,13 +3,13 @@
 namespace App\Http\Controllers;
 
 use App\Http\Controllers\Controller;
-use App\Models\Movie;
+use App\Models\Petrol;
 use App\Models\newreleases;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 
 
-class MoviesAndShowsController extends Controller
+class StationController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -20,9 +20,9 @@ class MoviesAndShowsController extends Controller
     {
      
 
-        $movies = Movie::all();
-       $movies = Movie::paginate(10);
-       $movies = Movie::with('newreleases')->get();
+        $movies = Petrol::all();
+       $movies = Petrol::paginate(10);
+       $movies = Petrol::with('newreleases')->get();
 
         return view('movies.index')->with('movies', $movies);
     }

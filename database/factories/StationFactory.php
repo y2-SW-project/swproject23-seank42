@@ -18,8 +18,9 @@ class StationFactory extends Factory
     {
         return [
             'name_of_petrolstation' => $this->faker->word,
-            'name_of_road' => $this->faker->word
-              
+            'name_of_road' => $this->faker->word,
+              'price' => $this->faker->randomFloat($nbMaxDecimals = NULL, $min = 0, $max = NULL) ,
+              'quality' => $this->faker->randomFloat($nbMaxDecimals = NULL, $min = 0, $max = NULL)
         ];
     }
 }

@@ -20,3 +20,10 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+// Route::get('/dashboard', function () {
+//     return redirect('/../stations');
+// })->middleware(['auth', 'verified'])->name('dashboard');
+
+// Route::resource('/stations', StationController::class)->middleware(['auth']);
+// require __DIR__.'/auth.php';

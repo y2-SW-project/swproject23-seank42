@@ -17,6 +17,9 @@ return new class extends Migration
             $table->id();
             $table->string('name_of_petrolstation');
             $table->string('name_of_road');
+            $table->string('price');
+            $table->string('quality');
+
             $table->timestamps();
         });
     }
