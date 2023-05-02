@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="container">
+<div class="container ">
     <div class="row bg-dark w-100 w-100">
         <div class="col-6">
             <h1 class="text-light text-center ">Diesel</h1>
@@ -104,8 +104,143 @@
     </div>
   </div>
 </nav>
+<table class="table table-dark table-striped-columns">
+<thead>
+    <tr>
+      
+      <th scope="col">Station</th>
+      <th scope="col">Price</th>
+      <th scope="col">Quality</th>
+    </tr>
+  </thead>
+  <tbody>
+    @foreach ($stations as $station)
+    <tr>
+      <td>{{$station->name_of_petrolstation}}</td>
+      <td>12</td>
+      <td>1.0</td>
+    </tr>
+    @endforeach
+</table>
             </div> 
         </div>
     </div>
+
+<div class="conatainer">
+    <div>
+        <h1 class="text-center text-light ">News</h1>
+        <div class="row">
+
+        <div class="col-4">
+        <div class="card text-center">
+        <div class="card-body">
+        <h5 class="card-title">Fears of panic buying at Irish petrol stations as fuel...</h5>
+        <p class="card-text">The cost of oil and petrol is set to rise sharply next month when the reduction of excise duty</p>
+        <a href="#" class="btn btn-primary">View more</a>
+        </div>
+        </div>
+        </div>
+
+        <div class="col-4">
+        <div class="card text-center">
+        <div class="card-body">
+        <h5 class="card-title">WWII-style rationing of petrol and energy 'could fight climate change'</h5>
+        <p class="card-text">WWII-style rationing of petrol and energy 'could fight climate change'</p>
+        <a href="#" class="btn btn-primary">View more</a>
+        </div>
+        </div>
+        </div>
+
+        <div class="col-4">
+        <div class="card text-center">
+        <div class="card-body">
+        <h5 class="card-title">Woman badgered by badger at petrol station</h5>
+        <p class="card-text">Molly Padget had just picked up a curry on her way home from work when she stopped at the Shell garage in Stafford</p>
+        <a href="#" class="btn btn-primary">View more</a>
+        </div>
+        </div>
+        </div>
+
+</div>
+
+
+<div class="conatainer">
+    <div>
+        <h1 class="text-center text-dark ">News</h1>
+        <div class="row">
+
+        <div class="col-4">
+        <div class="card text-center">
+        <div class="card-body">
+        <h5 class="card-title">Fears of panic buying at Irish petrol stations as fuel...</h5>
+        <p class="card-text">The cost of oil and petrol is set to rise sharply next month when the reduction of excise duty</p>
+        <a href="#" class="btn btn-primary">View more</a>
+        </div>
+        </div>
+        </div>
+
+        <div class="col-4">
+        <div class="card text-center">
+        <div class="card-body">
+        <h5 class="card-title">WWII-style rationing of petrol and energy 'could fight climate change'</h5>
+        <p class="card-text">WWII-style rationing of petrol and energy 'could fight climate change'</p>
+        <a href="#" class="btn btn-primary">View more</a>
+        </div>
+        </div>
+        </div>
+
+        <div class="col-4">
+        <div class="card text-center">
+        <div class="card-body">
+        <h5 class="card-title">Woman badgered by badger at petrol station</h5>
+        <p class="card-text">Molly Padget had just picked up a curry on her way home from work when she stopped at the Shell garage in Stafford</p>
+        <a href="#" class="btn btn-primary">View more</a>
+        </div>
+        </div>
+        </div>
+
+</div>
+
+<div class="conatainer">
+    <div>
+        <h1 class="text-center text-dark ">News</h1>
+        <div class="row">
+
+        <div class="col-4">
+        <div class="card text-center">
+        <div class="card-body">
+        <h5 class="card-title">Fears of panic buying at Irish petrol stations as fuel...</h5>
+        <p class="card-text">The cost of oil and petrol is set to rise sharply next month when the reduction of excise duty</p>
+        <a href="#" class="btn btn-primary">View more</a>
+        </div>
+        </div>
+        </div>
+
+        <div class="col-4">
+        <div class="card text-center">
+        <div class="card-body">
+        <h5 class="card-title">WWII-style rationing of petrol and energy 'could fight climate change'</h5>
+        <p class="card-text">WWII-style rationing of petrol and energy 'could fight climate change'</p>
+        <a href="#" class="btn btn-primary">View more</a>
+        </div>
+        </div>
+        </div>
+
+        <div class="col-4">
+        <div class="card text-center">
+        <div class="card-body">
+        <h5 class="card-title">Woman badgered by badger at petrol station</h5>
+        <p class="card-text">Molly Padget had just picked up a curry on her way home from work when she stopped at the Shell garage in Stafford</p>
+        <a href="#" class="btn btn-primary">View more</a>
+        </div>
+        </div>
+        </div>
+
+</div>
+
+    </div>
+</div>
+
+
 </div>
 @endsection
